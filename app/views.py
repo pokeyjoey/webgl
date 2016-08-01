@@ -80,4 +80,27 @@ def rotating_translated_triangle():
 def rotating_triangle():
     return render_template('RotatingTriangle.html', title='RotatingTriangle')
 
+# chapter 5
+@app.route('/multi_attibute_size')
+def multi_attibute_size():
+    return render_template('MultiAttributeSize.html', title='MultiAttributeSize')
 
+@app.route('/multi_attibute_size_interleaved')
+def multi_attibute_size_interleaved():
+    return render_template('MultiAttributeSize_Interleaved.html', title='MultiAttributeSize_Interleaved')
+
+@app.route('/multi_attibute_color')
+def multi_attibute_color():
+    return render_template('MultiAttributeColor.html', title='MultiAttributeColor')
+
+@app.route('/colored_triangle')
+def colored_triangle():
+    return render_template('ColoredTriangle.html', title='ColoredTriangle')
+
+@app.route('/hello_triangle_fragcoord')
+def hello_triangle_fragcoord():
+    return render_template('HelloTriangle_FragCoord.html', title='HelloTriangle_FragCoord')
+
+@app.route('/textured_quad')
+def textured_quad():
+    return render_template('TexturedQuad.html', title='TexturedQuad')
